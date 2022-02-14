@@ -19,7 +19,7 @@ public class StepDefinitions {
     public void user_visits_gmail_signup_page() throws Exception {
         System.setProperty("webdriver.gecko.driver", "./src/test/resources/geckodriver.exe");
         FirefoxOptions ops=new FirefoxOptions();
-        ops.addArguments("--headed"); //uncomment if you want to run in headless mode
+        ops.addArguments("--headed"); 
         driver = new FirefoxDriver(ops);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
